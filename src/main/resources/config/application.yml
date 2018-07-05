@@ -1,0 +1,29 @@
+server:
+    port: 8080
+application:
+    message: Spring Html Parser API
+    appname: spring-html-parser
+logging.file: app.log
+management.port: 8081
+management.addres: 127.0.0.1
+management.context-path: /admin 
+endpoints.health.enabled: true
+security.basic.enabled: false
+management.security.enabled: false
+
+# spring.data.mongodb.uri: mongodb://mongo:27000/test
+# spring.data.mongodb.uri: mongodb://mongo:27017/names
+---
+spring: 
+    profiles: development
+server:
+    port: 9090
+application: 
+    message: dev environment
+---
+spring:
+    profiles: production
+server:
+    port: 10010
+application:
+    message: production enviroment
