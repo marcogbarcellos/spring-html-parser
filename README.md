@@ -10,8 +10,8 @@ I'm using Java(Spring), gradle, docker, and bash/python to run a test script. Th
 - Install [pip](https://pip.pypa.io/en/stable/installing/)
 - After installing pip, Install [html5lib](https://pypi.org/project/html5lib/)
 - cd ROOT/OF/PROJECT
-- docker build -t opensea/challenge .
-- docker run -it -p 8080:8080 opensea/challenge
+- docker build -t html-parser .
+- docker run -it -p 8080:8080 html-parser
 - sh test.sh
 
 ## Instructions
